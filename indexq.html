@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desarrollo Web: Estructura, Arquitectura y Evolución</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <h1>Desarrollo Web: Fundamentos y Evolución</h1>
+
+    <div class="cuadro">
+        <p>El desarrollo web es el proceso de creación de sitios y aplicaciones para internet o una intranet. Abarca desde el diseño de una simple página de texto plano hasta complejas aplicaciones de red, negocios electrónicos, servicios de redes sociales y sistemas basados en inteligencia artificial.</p>
+    </div>
+
+    <h2>Estructura Básica de un Sitio Web</h2>
+    <p>Cualquier proyecto web moderno se divide en tres pilares fundamentales que separan el contenido, la presentación y el comportamiento:</p>
+    
+    <ul>
+        <li><strong>HTML (Estructura):</strong> El esqueleto de la página. Define los títulos, párrafos, imágenes y enlaces usando etiquetas semánticas.</li>
+        <li><strong>CSS (Presentación):</strong> La piel del sitio. Controla colores, fuentes, espaciados, animaciones y el diseño adaptivo (Responsive Design).</li>
+        <li><strong>JavaScript (Interactividad):</strong> El sistema nervioso. Permite elementos dinámicos, lógica compleja, manipulación del DOM y comunicación con servidores.</li>
+    </ul>
+
+    <h2>Arquitectura Cliente-Servidor</h2>
+    <p>El desarrollo web se fundamenta en el modelo Cliente-Servidor. El cliente (el navegador del usuario) realiza peticiones HTTP a un servidor, el cual procesa la solicitud, interactúa con la base de datos si es necesario, y devuelve una respuesta.</p>
+    
+   <img src="https://datos.gob.es/sites/default/files/styles/wide/public/blog/image/04_0.jpg?itok=8FmuVgOz" alt="">
+
+    <h2>Partes del Desarrollo Web</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Componente</th>
+                <th>Descripción Detallada</th>
+                <th>Tecnologías, Lenguajes y Frameworks</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Frontend</td>
+                <td>La capa de presentación con la que interactúa el usuario. Se encarga de la accesibilidad, el rendimiento en el navegador y la experiencia de usuario (UX/UI).</td>
+                <td>HTML5, CSS3, JavaScript (ES6+), React, Vue.js, Angular, Tailwind CSS.</td>
+            </tr>
+            <tr>
+                <td>Backend</td>
+                <td>La capa de acceso a datos y lógica de negocio. Procesa las reglas de la aplicación, gestiona las sesiones de usuario, la seguridad y la lógica del lado del servidor.</td>
+                <td>Python (Django/FastAPI), Java (Spring Boot), Node.js (Express), PHP (Laravel), Ruby on Rails.</td>
+            </tr>
+            <tr>
+                <td>Bases de Datos</td>
+                <td>Sistemas de almacenamiento donde reside toda la información dinámica de forma estructurada o no estructurada.</td>
+                <td>Relacionales (SQL): MySQL, PostgreSQL.<br>No Relacionales (NoSQL): MongoDB, Redis.</td>
+            </tr>
+            <tr>
+                <td>DevOps y Despliegue</td>
+                <td>Infraestructura y automatización. Se encarga de que la aplicación esté disponible en internet mediante integración y despliegue continuo (CI/CD).</td>
+                <td>Git, GitHub, Docker, AWS, Vercel, Netlify, Linux.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>El Rol de las APIs (Application Programming Interfaces)</h2>
+    <p>Las APIs actúan como puentes de comunicación entre el Frontend y el Backend, o entre diferentes servicios. En el desarrollo moderno, las arquitecturas basadas en <strong>REST APIs</strong> o <strong>GraphQL</strong> permiten que el Frontend consuma datos de forma eficiente mediante formatos ligeros como JSON.</p>
+
+   ">
+
+    <h2>Historia y Evolución de la Web</h2>
+    <p>El desarrollo web ha pasado por varias etapas críticas desde su concepción por Tim Berners-Lee en el CERN:</p>
+    <ol>
+        <li><strong>Web 1.0 (1990-2000):</strong> Sitios estáticos de "solo lectura". El contenido se actualizaba raramente y el usuario era un espectador pasivo. Predominaba el uso de tablas para el diseño visual.</li>
+        <li><strong>Web 2.0 (2000-2010):</strong> La web dinámica y colaborativa. Auge de las redes sociales, blogs y el contenido generado por el usuario. Tecnologías como AJAX permitieron actualizar partes de la página sin recargarla por completo.</li>
+        <li><strong>Web 3.0 (2010-Presente):</strong> La web semántica e inteligente. Enfoque en la interpretación de datos por parte de máquinas, aplicaciones ultra-rápidas (SPAs y PWAs), descentralización (Blockchain) e integración de modelos de Inteligencia Artificial para personalizar la experiencia.</li>
+    </ol>
+
+    <h2>Buenas Prácticas en el Desarrollo Moderno</h2>
+    <ul>
+        <li><strong>Diseño Responsivo (Mobile First):</strong> Diseñar primero para pantallas móviles y luego adaptar la interfaz a pantallas más grandes.</li>
+        <li><strong>Optimización de Rendimiento (Web Performance):</strong> Minimizar el tamaño de los archivos CSS/JS, optimizar imágenes y utilizar caché para tiempos de carga menores a 2 segundos.</li>
+        <li><strong>Accesibilidad (a11y):</strong> Escribir código HTML semántico para que los sitios web sean navegables por personas con discapacidades utilizando lectores de pantalla.</li>
+        <li><strong>Control de Versiones:</strong> Uso obligatorio de herramientas como Git para gestionar el historial de cambios del código fuente en equipo.</li>
+    </ul>
+
+    <h2>Ejemplo de Código HTML Estructural Moderno</h2>
+    <p>A continuación, se muestra cómo se ve la estructura raíz de un documento moderno utilizando etiquetas semánticas de HTML5:</p>
+
+    <pre class="bloque-codigo">
+[Estructura HTML5 Semántica]
+- <!DOCTYPE html>
+- html lang="es"
+  - head
+    - meta charset="UTF-8"
+    - title: Mi Web Semántica
+  - body
+    - header (Contiene el logo y menú de navegación)
+    - main (Contenido principal de la página)
+      - section (Bloque temático de contenido)
+        - article (Contenido independiente)
+    - footer (Pie de página con derechos de autor y enlaces)
+    </pre>
+
+    <h2>Bibliografía Consultada</h2>
+    <ul class="biblio">
+        <li>Berners-Lee, T. (1999). <em>Weaving the Web</em>. HarperSanFrancisco.</li>
+        <li>Duckett, J. (2011). <em>HTML and CSS: Design and Build Websites</em>. John Wiley & Sons.</li>
+        <li>Flanagan, D. (2020). <em>JavaScript: The Definitive Guide</em>. O'Reilly Media.</li>
+        <li>MDN Web Docs. (2024). <em>Learn web development</em>. Mozilla Foundation.</li>
+        <li>W3C. (2024). <em>Standards and Technical Reports</em>. World Wide Web Consortium.</li>
+    </ul>
+
+</body>
+</html>
